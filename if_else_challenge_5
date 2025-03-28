@@ -1,0 +1,31 @@
+E_weight = float(input("Please enter your weight at Earth as a floating number"))
+planet_number = int(input("Please enter your designated planet number"))
+
+if planet_number == 1:
+    relative_gravity = 0.38
+    planet = 'Mercury'
+elif planet_number == 2:
+    relative_gravity = 0.91
+    planet = 'Venus'
+elif planet_number == 3:
+    relative_gravity = 0.38
+    planet = 'Mars'
+elif planet_number == 4:
+    relative_gravity = 2.53
+    planet = 'Jupiter'
+elif planet_number == 5:
+    relative_gravity = 1.07
+    planet = 'Saturn'
+elif planet_number == 6:
+    relative_gravity = 0.89
+    planet = 'Uranus'
+elif planet_number == 7:
+    relative_gravity = 1.14
+    planet = 'Neptune'
+else:
+    print("Invalid planet number")
+
+destination_weight = E_weight * relative_gravity
+
+
+print(f'Your weight will be {destination_weight:.2f} kg in {planet}')
