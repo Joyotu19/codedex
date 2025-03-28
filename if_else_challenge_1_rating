@@ -1,0 +1,12 @@
+rating = float(2.5)
+
+if rating > 4.5:
+    print('Extraordinary')
+elif 4.5 >= rating > 4.0:
+    print('Excellent')
+elif 4.0 >= rating > 3.0:
+    print('Good')
+elif 3.0 >= rating > 2.0:
+    print('Fair')
+else:
+    print('Poor')
