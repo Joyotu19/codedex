@@ -1,0 +1,7 @@
+import random
+total = random.randint(2,12)
+ask = int(input("What is the total between 2 to 12?"))
+while ask != total:
+  ask = int(input("Wrong answer! What is the total between 2 to 12?"))
+  
+print ("You got it!")
